@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 namespace _DownGame
 {
-    public class MainMenuController : MonoBehaviour
+    public class UiMainMenuController : MonoBehaviour
     {
    
         public void StartGame()
