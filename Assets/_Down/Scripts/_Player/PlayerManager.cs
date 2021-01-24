@@ -48,6 +48,8 @@ namespace SoulPlayer
         {
             _thisPlayerMovement.MovePlayer(_movementVector);
             _thisPlayerMovement.Dash(_dashVector);
+            _movementVector = Vector2.zero;
+            _dashVector = Vector2.zero;
         }
 
         internal void EnemyCollisionHandler()

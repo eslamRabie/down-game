@@ -18,12 +18,11 @@ namespace SoulPlayer
             _isCollidinWithWall = false;
         }
 
-        internal bool MovePlayer(Vector2 force)
+        internal bool MovePlayer(Vector2 velocity)
         {
             if (_isCollidinWithWall) return false;
-            _playerBody.AddForce(force);
+            _playerBody.velocity = velocity;
             return true;
-            
         }
 
         internal bool Dash(Vector2 force)
