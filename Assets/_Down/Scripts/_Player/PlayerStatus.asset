@@ -15,5 +15,5 @@ MonoBehaviour:
   _playerName: 
   _playerLevel: 0
   _playerStep: 0
-  _playerMoveSpeed: 2
+  _playerMoveSpeed: 5
   _playerDashSpeed: 2
