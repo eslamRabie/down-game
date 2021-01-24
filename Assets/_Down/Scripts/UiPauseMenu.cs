@@ -1,7 +1,7 @@
 using UnityEngine;
 namespace _DownGame
 {
-    public class UiMenuController : MonoBehaviour
+    public class UiPauseMenu : MonoBehaviour
     {
 
         [SerializeField]
