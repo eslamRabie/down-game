@@ -1,13 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 namespace _DownGame
 {
     public class UiMenuController : MonoBehaviour
     {
 
-        [SerializeField]
-        GameObject gameOverWindow;
         [SerializeField]
         GameObject pauseMenu;
 
