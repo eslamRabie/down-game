@@ -7,18 +7,18 @@ namespace SoulPlayer
 { 
     public class PlayerEnemyInteraction : MonoBehaviour
     {
-        private PlayerManager thidPlayerManager;
+        private PlayerManager thisdPlayerManager;
 
         private void Start()
         {
-            thidPlayerManager = GetComponent<PlayerManager>();
+            thisdPlayerManager = GetComponent<PlayerManager>();
         }
 
         private void OnCollisionEnter(Collision other)
         {
             if (other.gameObject.tag == "Enemy")
             {
-                thidPlayerManager.EnemyCollisionHandler();
+                thisdPlayerManager.EnemyCollisionHandler();
             }
         }
     }

@@ -10,6 +10,7 @@ namespace SoulPlayer
     {
         private Rigidbody2D _playerBody;
         private bool _isCollidinWithWall;
+        [SerializeField] private string _wallTagName;
 
         private void Start()
         {
@@ -25,14 +26,19 @@ namespace SoulPlayer
             
         }
 
+        internal bool Dash(Vector2 force)
+        {
+            return false;
+        }
+
         private void OnCollisionEnter(Collision other)
         {
-            if(other.gameObject.tag == "Wall") _isCollidinWithWall = true;
+            if(other.gameObject.tag == _wallTagName) _isCollidinWithWall = true;
         }
 
         private void OnCollisionExit(Collision other)
         {
-            if (other.gameObject.tag == "Wall") _isCollidinWithWall = false;
+            if (other.gameObject.tag == _wallTagName) _isCollidinWithWall = false;
         }
         
     }

@@ -7,10 +7,13 @@ namespace SoulPlayer
 
     internal class PlayerKeyboardInput : IPlayerInput
     {
-        [SerializeField] private KeyboardMapSO _keboardMap;
+        internal KeyboardMapSO _keboardMap;
+        
         internal override bool MoveRight()
         {
-            return Input.GetKeyDown(_keboardMap._mRight);
+            var x= Input.GetKeyDown(_keboardMap._mRight);
+            Debug.Log(x);
+            return x;
         }
 
         internal override bool MoveLeft()

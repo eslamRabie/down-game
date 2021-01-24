@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SoulPlayer
 {
-
+    [CreateAssetMenu]
     public class KeyboardMapSO : ScriptableObject
     { 
         [SerializeField] public KeyCode _mLeft;
