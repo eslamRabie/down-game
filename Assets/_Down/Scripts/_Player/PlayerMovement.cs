@@ -11,7 +11,7 @@ namespace SoulPlayer
         private PlayerManager _playerManager;
 
         private string _leftWallTag = "LeftConfiner";
-        private string _rightWallTag = "RighConfiner";
+        private string _rightWallTag = "RightConfiner";
 
         private void Start()
         {
