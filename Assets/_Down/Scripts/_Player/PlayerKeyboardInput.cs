@@ -11,9 +11,7 @@ namespace SoulPlayer
         
         internal override bool MoveRight()
         {
-            var x= Input.GetKey(_keboardMap._mRight);
-            Debug.Log(x);
-            return x;
+            return Input.GetKey(_keboardMap._mRight);;
         }
 
         internal override bool MoveLeft()
@@ -21,14 +19,14 @@ namespace SoulPlayer
             return Input.GetKey(_keboardMap._mLeft);
         }
 
-        internal override bool DashUp()
+        internal override bool Dash()
         {
-            return Input.GetKeyDown(_keboardMap._dUp);
+            return Input.GetKeyDown(_keboardMap._dash);
         }
 
-        internal override bool DashDown()
+        internal override bool PowerUp()
         {
-            return Input.GetKeyDown(_keboardMap._dDown);
+            return Input.GetKeyDown(_keboardMap._powerUp);
         }
     }
 }

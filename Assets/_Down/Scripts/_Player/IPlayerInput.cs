@@ -4,13 +4,11 @@ using UnityEngine;
 
 namespace SoulPlayer
 {
-
-
     internal abstract class IPlayerInput
     {
         internal abstract bool MoveRight();
         internal abstract bool MoveLeft();
-        internal abstract bool DashUp();
-        internal abstract bool DashDown();
+        internal abstract bool Dash();
+        internal abstract bool PowerUp();
     }
 }
