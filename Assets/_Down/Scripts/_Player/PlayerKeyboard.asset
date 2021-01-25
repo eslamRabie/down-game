@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mLeft: 97
   _mRight: 100
-  _dUp: 119
-  _dDown: 115
+  _dash: 32
+  _powerUp: 119
