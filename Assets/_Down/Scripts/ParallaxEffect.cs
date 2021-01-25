@@ -17,5 +17,6 @@ namespace _DownGame
             newPosition.x = Mathf.Repeat(Time.time * speed, deltaPosition);
             transform.position = startPosition + Vector2.left * newPosition;
         }
+
     }
 }
