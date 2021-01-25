@@ -10,8 +10,8 @@ namespace SoulPlayer
         private bool _isRightWallCollision;
         private PlayerManager _playerManager;
 
-        private string _leftWallTag = "LeftWall";
-        private string _rightWallTag = "RightWall";
+        private string _leftWallTag = "LeftConfiner";
+        private string _rightWallTag = "RightConfiner";
 
         private void Start()
         {
