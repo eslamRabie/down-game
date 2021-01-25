@@ -1,10 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SoulPlayer
-{ 
+{
     public class PlayerEnemyInteraction : MonoBehaviour
     {
         private PlayerManager thisdPlayerManager;
@@ -14,9 +11,10 @@ namespace SoulPlayer
             thisdPlayerManager = GetComponent<PlayerManager>();
         }
 
-        private void OnCollisionEnter(Collision other)
+        private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.gameObject.tag == "Enemy")
+            Debug.Log("collided");
+            if (other.gameObject.CompareTag("Enemy"))
             {
                 thisdPlayerManager.EnemyCollisionHandler();
             }

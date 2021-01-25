@@ -215,10 +215,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1854558460}
   - component: {fileID: 1854558459}
-  - component: {fileID: 1854558458}
   - component: {fileID: 1854558457}
   - component: {fileID: 1854558456}
   - component: {fileID: 1854558455}
+  - component: {fileID: 1854558458}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -265,8 +265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _thisPlayerStatusSo: {fileID: 11400000, guid: 4b1ff210bddb93148b7de897e427910c, type: 2}
   _thisPlayerKeyboardMap: {fileID: 11400000, guid: 04e27af023210524c90bded0ba70584a, type: 2}
---- !u!58 &1854558458
-CircleCollider2D:
+--- !u!70 &1854558458
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -278,9 +278,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_Offset: {x: -0.01133275, y: 0.24365473}
+  m_Size: {x: 0.93064535, y: 2.4392624}
+  m_Direction: 0
 --- !u!50 &1854558459
 Rigidbody2D:
   serializedVersion: 4
@@ -425,8 +425,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117380629}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.575, z: 0}
-  m_LocalScale: {x: 1, y: 1.575, z: 1}
+  m_LocalPosition: {x: 0, y: 0.2463, z: 0}
+  m_LocalScale: {x: 1, y: 1.2462975, z: 1}
   m_Children: []
   m_Father: {fileID: 1854558460}
   m_RootOrder: 0

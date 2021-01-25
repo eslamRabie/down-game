@@ -1,16 +1,11 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
-using UnityEngine.Serialization;
 
 
 namespace SoulPlayer
 {
     public class PlayerManager : MonoBehaviour
     {
-        [SerializeField]private PlayerStatusSO _thisPlayerStatusSo;
+        [SerializeField] private PlayerStatusSO _thisPlayerStatusSo;
         [SerializeField] private KeyboardMapSO _thisPlayerKeyboardMap;
         private PlayerKeyboardInput _thisPlayerInput;
         private PlayerMovement _thisPlayerMovement;
@@ -23,7 +18,6 @@ namespace SoulPlayer
             _thisPlayerMovement = GetComponent<PlayerMovement>();
         }
 
-        // Update is called once per frame
         void Update()
         {
             if (_thisPlayerInput.MoveRight())
@@ -56,7 +50,10 @@ namespace SoulPlayer
         {
             if (_thisPlayerStatusSo._playerStep == 0)
             {
-                if (_thisPlayerStatusSo._playerLevel > 0) _thisPlayerStatusSo._playerLevel--;
+                if (_thisPlayerStatusSo._playerLevel > 0)
+                {
+                    _thisPlayerStatusSo._playerLevel--;
+                }
             }
             else
             {
