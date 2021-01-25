@@ -17,12 +17,12 @@ namespace SoulPlayer
         private Vector2 _movementVector;
 
         private bool _isDashing;
-        private int _dashTimeMS = 2000;
+        [SerializeField][Range(100, 5000)]private int _dashTimeMS = 1000;
         
         
         private int _score;
         private int _lightYears;
-        private int _dashes;
+        [SerializeField][Range(0, 10)]private int _dashes;
         private int _powerUp;
         private int _playerLevel;
         private int _playerStep;

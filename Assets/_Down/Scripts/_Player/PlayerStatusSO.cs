@@ -8,7 +8,7 @@ namespace SoulPlayer
     [CreateAssetMenu]
     internal class PlayerStatusSO : ScriptableObject
     {
-        [SerializeField] internal int _playerMoveSpeed;
-        [SerializeField] internal int _playerDashSpeed;
+        [SerializeField][Range(0, 10)] internal int _playerMoveSpeed;
+        [SerializeField][Range(0, 3)] internal int _playerDashSpeed;
     }
 }
