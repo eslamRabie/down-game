@@ -2,21 +2,20 @@ using UnityEngine;
 
 namespace SoulPlayer
 {
-    public class PlayerEnemyInteraction : MonoBehaviour
+    internal class PlayerEnemyInteraction : MonoBehaviour
     {
-        private PlayerManager thisdPlayerManager;
+        private PlayerManager _playerManager;
 
         private void Start()
         {
-            thisdPlayerManager = GetComponent<PlayerManager>();
+            _playerManager = GetComponent<PlayerManager>();
         }
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            Debug.Log("collided");
             if (other.gameObject.CompareTag("Enemy"))
             {
-                thisdPlayerManager.EnemyCollisionHandler();
+                _playerManager.EnemyCollisionHandler();
             }
         }
     }

@@ -5,12 +5,12 @@ using UnityEngine;
 namespace SoulPlayer
 {
     [CreateAssetMenu]
-    public class KeyboardMapSO : ScriptableObject
+    internal class KeyboardMapSO : ScriptableObject
     { 
-        [SerializeField] public KeyCode _mLeft;
-        [SerializeField] public KeyCode _mRight;
-        [SerializeField] public KeyCode _dUp;
-        [SerializeField] public KeyCode _dDown;
+        [SerializeField] internal KeyCode _mLeft;
+        [SerializeField] internal KeyCode _mRight;
+        [SerializeField] internal KeyCode _dash;
+        [SerializeField] internal KeyCode _powerUp;
     }
 
 }
