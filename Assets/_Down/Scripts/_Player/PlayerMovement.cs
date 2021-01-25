@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SoulPlayer
@@ -30,15 +27,15 @@ namespace SoulPlayer
             return false;
         }
 
-        private void OnCollisionEnter(Collision other)
+        private void OnCollisionEnter2D(Collision2D other)
         {
-            if(other.gameObject.tag == _wallTagName) _isCollidinWithWall = true;
+            if (other.gameObject.tag == _wallTagName) _isCollidinWithWall = true;
         }
 
-        private void OnCollisionExit(Collision other)
+        private void OnCollisionExit2D(Collision2D other)
         {
             if (other.gameObject.tag == _wallTagName) _isCollidinWithWall = false;
         }
-        
+
     }
 }
