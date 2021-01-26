@@ -10,9 +10,6 @@ namespace SoulPlayer
         private bool _isRightWallCollision;
         private PlayerManager _playerManager;
 
-        private string _leftWallTag = "LeftConfiner";
-        private string _rightWallTag = "RightConfiner";
-
         private void Start()
         {
             _playerBody = GetComponent<Rigidbody2D>();
@@ -33,18 +30,16 @@ namespace SoulPlayer
             transform.position += Vector3.up * posInc;
         }
 
-        private void OnCollisionEnter2D(Collision2D other)
+        internal void LeftWallCollision(bool state)
         {
-            if (other.gameObject.CompareTag(_leftWallTag)) _isLeftWallCollision = true;
-            if (other.gameObject.CompareTag(_rightWallTag)) _isRightWallCollision = true;
-            if(other.gameObject.CompareTag("PowerUp")) _playerManager.PowerUpCollisionHandler();
+            _isLeftWallCollision = state;
         }
-
-        private void OnCollisionExit2D(Collision2D other)
+        
+        internal void RightWallCollision(bool state)
         {
-            if (other.gameObject.CompareTag(_leftWallTag)) _isLeftWallCollision = false;
-            if (other.gameObject.CompareTag(_rightWallTag)) _isRightWallCollision = false;
+            _isRightWallCollision = state;
         }
+        
 
     }
 }
