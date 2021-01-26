@@ -1020,7 +1020,7 @@ GameObject:
   - component: {fileID: 652424216}
   m_Layer: 0
   m_Name: Player
-  m_TagString: LeftConfiner
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1038,8 +1038,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.046081305, y: 0.012798905}
-  m_Size: {x: 1.1895757, y: 2.5673602}
+  m_Offset: {x: -0.0033509135, y: -0.019411683}
+  m_Size: {x: 0.633428, y: 1.4722011}
   m_Direction: 0
 --- !u!114 &652424217
 MonoBehaviour:
@@ -1079,8 +1079,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _thisPlayerStatusSo: {fileID: 11400000, guid: 4b1ff210bddb93148b7de897e427910c, type: 2}
   _thisPlayerKeyboardMap: {fileID: 11400000, guid: 04e27af023210524c90bded0ba70584a, type: 2}
-  _dashTimeMS: 500
-  _dashes: 0
 --- !u!50 &652424220
 Rigidbody2D:
   serializedVersion: 4
@@ -1110,7 +1108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652424215}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 3.9, y: 2.53, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2092896309}
@@ -1406,7 +1404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.49600002, y: 0.8323333}
   m_AnchorMax: {x: 0.528, y: 0.89151883}
-  m_AnchoredPosition: {x: -0.0000038146973, y: -2.178711}
+  m_AnchoredPosition: {x: 0, y: -2.178711}
   m_SizeDelta: {x: -44.929703, y: -46.532898}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &784752562
@@ -3608,7 +3606,7 @@ GameObject:
   - component: {fileID: 2092896310}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3622,7 +3620,7 @@ Transform:
   m_GameObject: {fileID: 2092896308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 652424221}
   m_RootOrder: 0
