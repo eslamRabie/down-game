@@ -35,6 +35,7 @@ namespace SoulPlayer
             }
             if (other.gameObject.CompareTag("Enemy"))
             {
+                Destroy(other.gameObject);
                 _playerManager.EnemyCollision();
             }
         }
