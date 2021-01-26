@@ -7,7 +7,8 @@ TagManager:
   - Enemy
   - LeftConfiner
   - RightConfiner
-  - PowerUp
+  - Dash
+  - Disguise
   layers:
   - Default
   - TransparentFX
